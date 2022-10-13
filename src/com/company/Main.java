@@ -44,7 +44,7 @@ class Fenêtre {
 
         while(true){
             try{
-                Thread.sleep(3600000);
+                Thread.sleep(1000);
             int r = (int)(Math.random()*256);
             int g = (int)(Math.random()*256);
             int k = (int)(Math.random()*256);
@@ -54,6 +54,7 @@ class Fenêtre {
             catch(InterruptedException p){
                 System.out.println("Interrupted");
             }
+            F.repaint();
         }
     }
 
